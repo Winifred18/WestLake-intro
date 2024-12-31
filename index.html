@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西湖首页</title>
+    <style>
+        /*body {
+            font-family: 幼圆;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url("img/西湖首页图.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+        }*/
+		.main{
+			position: relative;
+			width:1200px;
+			height:768px;
+			font-family: 幼圆;
+			margin: 0 auto;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-image: url("img/西湖首页.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+        .welcome {
+            font-size: 100px;
+            /*margin-left: 20px;*/
+            cursor: pointer;
+            color: #333;
+			transition: 1.5s;/*鼠标移开也会缓慢恢复*/
+			position: absolute;
+			top:35%;
+			left:30%;
+        }
+		.welcome:hover{
+			transform: scale(1.2);
+		}
+        .images {
+            position: absolute;/*与父元素定位*/
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .images img {
+			border-radius: 10%;/*设置圆角*/
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.2);
+        }
+		.music-control {
+		            position: absolute;/*与父元素定位*/
+		            top: 20px;
+		            right: 20px;
+		            cursor: pointer;
+		}
+		a {
+		    text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+	<div class="main">
+		<div class="welcome" >
+			<a href="菜单.html"><b>西湖欢迎您！</b></a>
+		</div>
+		<div class="music-control">
+		        <audio src="img/20241103_160411_0.mp3" id="backgroundMusic" loop autoplay controls></audio>
+		    </div>
+		<div class="images">
+		    <img src="img/西湖.jpeg" alt="图片1">
+		    <img src="img/西湖2.png" alt="图片2">
+		    <img src="img/西湖3.png" alt="图片3">
+		    <img src="img/西湖4.png" alt="图片4">
+		</div>
+	</div>
+    <!--<div class="welcome" onclick="alert('您点击了“西湖欢迎您”！')">西湖欢迎您</div>
+    <div class="music-control">
+            <audio src="img/20241103_160411_0.mp3" id="backgroundMusic" loop autoplay controls></audio>
+        </div>
+    <div class="images">
+        <img src="img/西湖.jpeg" alt="图片1">
+        <img src="img/西湖2.png" alt="图片2">
+        <img src="img/西湖3.png" alt="图片3">
+        <img src="img/西湖4.png" alt="图片4">
+    </div>-->
+</body>
+</html>

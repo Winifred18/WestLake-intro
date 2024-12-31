@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>路线界面</title>
+	<style>
+		body {
+			background-image: url("img/菜单.jpg");
+			background-size: 100%;
+			background-attachment: fixed;
+			margin: 0;
+			padding: 0;
+		}
+		#beijing {
+			width: 1200px;
+			height: 768px;
+			margin: 0 auto;
+		}
+		div img {
+			display: block;
+			margin: 0 auto;
+		}
+		ul, ol {
+			list-style: none;
+		}
+		.dropdown {
+			width: 100%; /* 占满整个屏幕宽度 */
+			max-width: 1200px; /* 最大宽度 */
+			height: 50px;
+			text-align: center;
+			display: flex; /* 使用flex布局 */
+			justify-content: space-around; /* 平均分布 */
+			margin: 0 auto; /* 水平居中 */
+		}
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		ol {
+			display: none;
+		}
+		.dropdown > li {
+			flex-grow: 1; /* 平分空间 */
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background-color: pink; /* 粉色背景 */
+			position: relative;
+		}
+		.dropdown > li:hover {
+			background-color: rgb(243, 118, 139);
+			font-weight: bold;
+		}
+		.dropdown > li:hover > ol {
+			display: block;
+		}
+		ol > li:hover {
+			background-color: pink;
+		}
+		.dropdown a {
+			display: block;
+		}
+		.circle-link {
+					display: block;
+					width: 100px; /* 您可以根据需要调整宽度和高度 */
+					height: 100px;
+					border-radius: 50%; /* 使元素成为圆形 */
+					background-color: lightgray; /* 背景颜色，您可以根据需要更改 */
+					background-image: url("img/联系页面.png"); /* 设置背景图像为电话图片 */
+					background-size: contain; /* 确保图片适应容器大小 */
+					background-repeat: no-repeat; /* 防止图片重复 */
+					background-position: center; /* 将图片居中显示 */
+					text-indent: -9999px; /* 隐藏链接文本（如果需要） */
+					color: transparent; /* 确保文本不可见（如果需要） */
+					margin: 0 auto; /* 水平居中（如果需要） */
+					bottom: 0; /* 距底部0距离 */
+					right: 0; /* 距右侧0距离 */
+					    /* 可选：增加一些外边距以避免紧贴边缘 */
+					position: fixed; /* 固定定位 */
+					bottom: 30; /* 距底部0距离 */
+					right: 30; /* 距右侧0距离 */
+					    /* 可选：增加一些外边距以避免紧贴边缘 */
+					margin-bottom: 30px;
+					margin-right: 30px;
+				}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">地 图 导 览</h1>
+	<div>
+		<ul class="dropdown">
+			<li>
+				<a>景点名称</a>
+				<ol>
+					<li><a href="日照灵隐.html">日照灵隐</a></li>
+					<li><a href="苏堤春晓.html">苏堤春晓</a></li>
+					<li><a href="平湖秋月.html">平湖秋月</a></li>
+					<li><a href="花港观鱼.html">花港观鱼</a></li>
+					<li><a href="断桥残雪.html">断桥残雪</a></li>
+				</ol>
+			</li>
+			<li>
+				<a href="美食.html">美食介绍</a>
+				
+			</li>
+			<li>
+				<a href="Westlake introduction.html">影视赏析</a>
+				<!--
+				<ol>
+					<li><a href="">子菜单1</a></li>
+					<li><a href="">子菜单1</a></li>
+					<li><a href="">子菜单1</a></li>
+				</ol>
+				-->
+			</li>
+			<div style="text-align: center; margin-top: 10px;">
+				<a href="联系我们.html" class="circle-link"></a> <!-- 替换tel:1234567890为您想要的链接 -->
+			</div>
+		</ul>
+	</div>
+</body>
+</html>
